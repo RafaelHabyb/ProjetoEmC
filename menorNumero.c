@@ -1,25 +1,37 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
+
     int x,y,z;
     
     printf("Digite o primeiro numero:");
-    scanf("%d",&x);
+    
+    if (scanf("%d",&x) != 1) {
+        printf("Entrada invalida. Digite um numero inteiro.\n");
+        return 0;
+    }
     
     printf("Digite o segundo numero:");
-    scanf("%d",&y);
+
+    if (scanf("%d",&y) != 1) {
+        printf("Entrada invalida. Digite um numero inteiro.\n");
+        return 0;
+    }
     
     printf("Digite o terceiro numero:");
-    scanf("%d",&z);
+
+    if (scanf("%d",&z) != 1) {
+        printf("Entrada invalida. Digite um numero inteiro.\n");
+        return 0;
+    }
     
     if (x < y && x < z) {
-        printf("O menor numero e:%d",x);
+        printf("O menor numero e: %d",x);
     } else {
         if(y < x && y < z){
-            printf("O menor numero e:%d",y);
+            printf("O menor numero e: %d",y);
         } else {
-            printf("O menor numero e:%d",z);
+            printf("O menor numero e: %d",z);
         }
     }
     return 0;
