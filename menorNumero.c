@@ -1,3 +1,5 @@
+// mostra o menor valor entre 3 números.
+
 #include <stdio.h>
 
 int main(){

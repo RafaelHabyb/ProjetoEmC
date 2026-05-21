@@ -1,3 +1,5 @@
+//Pega tres números do usuário, eleva cada um ao quadrado, soma os resultados e exibe a soma final.
+
 #include <stdio.h>
 
 int main(){
