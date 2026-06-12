@@ -1,13 +1,15 @@
+//Estrutura While, contar quantidade de números em intervalos definidos.
+
 #include <stdio.h>
 
 int main(){
     
     int cont1=0, cont2=0, cont3=0, cont4=0, num;
 
-    printf("Digite um numero entre 0 e 100:");
+    printf("Digite um número entre 0 e 100:");
     scanf("%d", &num);
 
-    while(num>=0){
+    while(num>=0 && num){
         if(num>=0 && num<=25){
             cont1++;
         } else if(num>=26 && num<=50){
@@ -17,7 +19,8 @@ int main(){
         } else if(num>=76 && num<=100){
             cont4++;
         } 
-        printf("Digite um numero entre 0 e 100:");
+        printf("\nDigite um número negativo para para sair.\n");
+        printf("Ou digite um número entre 0 e 100 para continuar:");
         scanf("%d", &num);
     }
     

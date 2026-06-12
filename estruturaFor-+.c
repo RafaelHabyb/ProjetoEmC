@@ -1,3 +1,5 @@
+//estrutura For, para achar a maior e a menor altura.
+
 #include <stdio.h>
 
 int main(){
@@ -18,6 +20,8 @@ int main(){
             maior=height;
         }
     }
+    
     printf("Menor altura %.2f, maior altura %.2f",menor,maior);
     return 0;
+
 }

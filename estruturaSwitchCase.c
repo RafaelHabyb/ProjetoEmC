@@ -1,6 +1,4 @@
-//ID Correspondente a um nome utilizando a estrutura switch case. 
-//O usuário deve digitar um número entre 1 e 10, e o programa deve exibir o nome correspondente ao número digitado. 
-//Caso o número seja inválido, o programa deve exibir uma mensagem de erro.
+//Estrutura Swicht Case, conferir se o id e válido
 
 #include <stdio.h>
 #include <string.h>
@@ -10,7 +8,7 @@ int main(){
     int num;
     char nome[20];
     
-    printf("Digite um numero entre 1 e 10:");
+    printf("Digite um número entre 1 e 10:");
     scanf("%d",&num);
     
     switch(num){
@@ -29,5 +27,7 @@ int main(){
         default:
             strcpy(nome,"ID invalido");
     }
+
     printf("ID digitado corresponde a: %s", nome);
+    
 }
